@@ -28,6 +28,13 @@ Component({
       wx.navigateTo({
         url: `/pages/search/search?tag=${this.properties.tag}`
       })
+    },
+    // 前往宠物详情
+    goDetail (e) {
+      const pid = e.currentTarget.dataset.pid
+      wx.navigateTo({
+        url: `/pages/pet-detail/index?pid=${pid}`
+      })
     }
   }
 })

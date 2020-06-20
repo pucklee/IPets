@@ -9,8 +9,14 @@ const URI = require('./config/index')
 
 const UsrUri = `${URI}/user`
 const petsUri = `${URI}/pets`
-const UsrDb = mongoose.createConnection(UsrUri)
-const PetsDb = mongoose.createConnection(petsUri)
+const UsrDb = mongoose.createConnection(UsrUri, {
+    user: 'user',
+    pass: '3d@p3*f!A'
+})
+const PetsDb = mongoose.createConnection(petsUri, {
+    user: 'pets',
+    pass: '3d@p3*f!A'
+})
 global.UsrDb = UsrDb // 用户库
 global.PetsDb = PetsDb // 宠物库
 global.Schema = mongoose.Schema
