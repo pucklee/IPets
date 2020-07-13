@@ -1,6 +1,6 @@
 const wxUrl = 'https://api.weixin.qq.com'
-const appid = 'wx6b04437c087fc326'
-const secret = '40171a97d1a9f7a24b3a465fde2ac812'
+const appid = 'wxb8a887f070204e09'
+const secret = 'fd855acbf7b95e45dce94fc570d4f96f'
 const wxApi = {
   code2Session: `${wxUrl}/sns/jscode2session` // 登录凭证校验
 }

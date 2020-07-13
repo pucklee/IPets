@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "查看启动日志",
+  "navigationBarTitleText": "宠物攻略",
   "usingComponents": {
     "headSearch": "./components/head",
     "classification": "./components/classification",
