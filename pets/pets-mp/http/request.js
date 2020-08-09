@@ -122,8 +122,30 @@ function requestGet(url, data, options = {}) {
     return request(url, options)
 }
 
+/**
+ * Get请求
+ * 返回数据格式经过to方法处理
+ */
+function fetchGet (url, params, options = {}) {
+    options.method = 'GET'
+    options.params = params
+    return to(request(url, options))
+  }
+
+/**
+ * Post请求
+ * 返回数据格式经过to方法处理
+ */
+function fetchPost (url, data, options = {}) {
+    options.method = 'POST'
+    options.data = data
+    return to(request(url, options))
+}
+
 module.exports = {
     request,
     requestPost,
-    requestGet
+    requestGet,
+    fetchPost,
+    fetchGet
 }

@@ -105,5 +105,5 @@ app.use(body())
 // add controllers:
 app.use(router())
 
-app.listen(8080)
+app.listen(80)
 console.log('app started at port 8080...')
